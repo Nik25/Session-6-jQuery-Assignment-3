@@ -1,0 +1,33 @@
+<!--Append a <p> element with a text message when an
+<input> field is changed -->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.1.0.js" 
+       integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<title>Session 6 jquery Assignment3</title>
+</head>
+<body> 
+	
+	 
+ <form name='demo_form'>
+ First name:<input id="field1" type="text" value="fname"><br>
+ Last name: <input id="field2" type="text" value="lname"><br>
+ <input type="submit" value="Submit">
+ </form>
+
+
+
+ <script type="text/javascript">
+	 $( "#field1").change(function() {
+	  $( "<p>The text has changed in field 1.</p>" ).appendTo( "body" );
+	});
+	$( "#field2").change(function() {
+	  $( "<p>The text has changed in field2.</p>" ).appendTo( "body" );
+	});
+
+
+</script>
+</body>
+</html>
